@@ -1,0 +1,8 @@
+Focuses on understanding how text is converted into smaller units called tokens.
+Implements three tokenization techniques: BPE, WordPiece and SentencePiece.
+Uses GPT-2, Multilingual BERT and XLM-R pretrained tokenizers.
+Tests the tokenizers using English, Telugu and Hindi sentences.
+Observes how each tokenizer divides the same sentence into smaller pieces.
+Compares token pieces, token IDs and total token counts.
+
+Output: A comparison of all three tokenizers showing their tokens, numeric IDs and token counts for each language.
