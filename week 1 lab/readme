@@ -1,1 +1,8 @@
+Introduces Large Language Models (LLMs) and how to connect them using an API.
+Uses Python and VS Code to create a basic LLM application.
+Generates and configures an API key.
+Stores the API key securely in a .env file.
+Uses the OpenAI or Gemini API to send a prompt.
+Executes the Python program and receives an AI-generated response.
 
+Output: A natural-language answer displayed in the terminal for the given question.
