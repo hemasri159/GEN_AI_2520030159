@@ -1,8 +1,68 @@
-Focuses on monitoring LLM requests and tracking their performance.
-Extends the Week 2 provider-agnostic LLM client.
-Tracks input tokens and output tokens for every request.
-Measures response time (latency) and estimates API cost.
-Uses MongoDB to store successful and failed request details.
-Implements timeouts and retry mechanisms to handle temporary failures.
+1. Aim
+To monitor LLM requests by tracking token usage, response time and estimated cost, and storing the information in MongoDB.
 
-Output: LLM usage records containing token counts, response time, estimated cost and request status are stored in MongoDB.
+2. Concepts / Theory
+- MongoDB: A NoSQL database used to store information in document format.
+- Token Tracking: Measures the number of input and output tokens.
+- Latency: The time taken by the model to generate a response.
+- Cost Estimation: Calculates the estimated API cost based on token usage.
+- Timeout: Prevents a request from waiting indefinitely.
+- Retry Mechanism: Attempts a request again when temporary failures occur.
+- LLM Observability: Monitoring the performance, usage and reliability of LLM applications.
+
+3. Software Requirements
+- Python.
+- Visual Studio Code.
+- MongoDB Atlas account.
+- Gemini API key.
+- Ollama and Llama 3.2.
+- Packages: google-genai, requests, python-dotenv, pymongo, pytest.
+
+4. Procedure / Implementation
+1. Create a MongoDB Atlas account.
+2. Create a database cluster.
+3. Install the required Python packages.
+4. Create the project files:
+   - main.py
+   - llm_client.py
+   - usage_logger.py
+   - test_client.py
+   - .env
+   - requirements.txt
+5. Configure MongoDB connection details in .env.
+6. Connect the Python application to MongoDB.
+7. Send prompts to Gemini or Ollama.
+8. Capture input tokens and output tokens.
+9. Calculate response latency and estimated cost.
+10. Store successful and failed request details in MongoDB.
+11. Implement timeout and retry handling.
+12. Run the unit tests and application.
+
+5. Expected Output
+Terminal Output:
+Choose provider (gemini/ollama): gemini
+
+Enter your question: Explain Machine Learning.
+
+LLM Response:
+
+Machine Learning is a branch of Artificial
+Intelligence that allows computers to learn
+from data and improve their performance.
+
+
+MongoDB Output:
+
+The database stores information such as:
+- Provider name.
+- Model name.
+- Input tokens.
+- Output tokens.
+- Total tokens.
+- Response latency.
+- Estimated cost.
+- Request status.
+
+6. Result
+Successfully implemented an LLM monitoring system using MongoDB to record token usage, latency, estimated cost and request status.
+6. Result
