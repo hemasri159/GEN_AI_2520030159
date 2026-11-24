@@ -1,0 +1,8 @@
+Focuses on monitoring LLM requests and tracking their performance.
+Extends the Week 2 provider-agnostic LLM client.
+Tracks input tokens and output tokens for every request.
+Measures response time (latency) and estimates API cost.
+Uses MongoDB to store successful and failed request details.
+Implements timeouts and retry mechanisms to handle temporary failures.
+
+Output: LLM usage records containing token counts, response time, estimated cost and request status are stored in MongoDB.
