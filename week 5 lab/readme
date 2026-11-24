@@ -1,0 +1,8 @@
+Focuses on estimating LLM usage and API costs before building an application.
+Calculates input tokens, output tokens and total token consumption.
+Estimates daily and monthly API expenses.
+Checks RPM (Requests Per Minute) and TPM (Tokens Per Minute) limits.
+Applies a safety margin to account for unexpected usage.
+Uses Python to generate a budget report and automated tests to verify calculations.
+
+Output: A budget report displaying estimated costs, token usage, capacity checks and a final GO/NO-GO recommendation
