@@ -1,8 +1,61 @@
-Focuses on understanding how text is converted into smaller units called tokens.
-Implements three tokenization techniques: BPE, WordPiece and SentencePiece.
-Uses GPT-2, Multilingual BERT and XLM-R pretrained tokenizers.
-Tests the tokenizers using English, Telugu and Hindi sentences.
-Observes how each tokenizer divides the same sentence into smaller pieces.
-Compares token pieces, token IDs and total token counts.
+1. Aim
+To implement and compare three tokenization approaches – BPE, WordPiece and SentencePiece – using English, Telugu and Hindi text.
 
-Output: A comparison of all three tokenizers showing their tokens, numeric IDs and token counts for each language.
+2. Concepts / Theory
+- Tokenization: The process of splitting input text into smaller units called tokens.
+- Token: A token can be a word, part of a word, punctuation mark or character-related unit.
+- Token ID: A numerical representation assigned to each token.
+- BPE (Byte Pair Encoding): Creates subword units by repeatedly merging frequently occurring symbol pairs.
+- WordPiece: Uses a learned vocabulary to split words into smaller subword pieces.
+- SentencePiece: A language-independent framework that learns subword units directly from raw text.
+
+3. Software Requirements
+- Python 3.10 or later.
+- Visual Studio Code.
+- Active virtual environment.
+- Internet connection.
+- Packages: transformers, sentencepiece.
+
+4. Procedure / Implementation
+1. Open the Week 4 project in VS Code.
+2. Activate the existing virtual environment.
+3. Install the required libraries.
+4. Create requirements.txt.
+5. Create tokenizer_comparison.py.
+6. Import AutoTokenizer from Transformers.
+7. Load the three pretrained tokenizers:
+   - GPT-2 for BPE.
+   - Multilingual BERT for WordPiece.
+   - XLM-RoBERTa for SentencePiece.
+8. Provide sample English, Telugu and Hindi text.
+9. Convert the input text into tokens.
+10. Generate token IDs.
+11. Calculate the total token count.
+12. Compare the outputs of all three tokenizers.
+
+5. Expected Output
+LANGUAGE: English
+
+INPUT TEXT:
+Artificial intelligence is changing the world.
+
+BPE - GPT-2
+Tokens: [...]
+Token IDs: [...]
+Token count: ...
+
+WordPiece - Multilingual BERT
+Tokens: [...]
+Token IDs: [...]
+Token count: ...
+
+SentencePiece - XLM-R
+Tokens: [...]
+Token IDs: [...]
+Token count: ...
+
+
+The same comparison is performed for Telugu and Hindi.
+
+6. Result
+Successfully implemented and compared BPE, WordPiece and SentencePiece tokenizers and observed how different tokenizers split multilingual text into tokens.
